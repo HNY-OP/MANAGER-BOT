@@ -83,18 +83,19 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ Hello *{}*, My name is *{}*! 
-A telegram group management bot. I'm here to help you to manage your groups.
-I have lots of handy features such as:
-‣ Warning system
-‣ Artificial intelligence
-‣ Flood control system
-‣ Note keeping system
-‣ Filters keeping system
-‣ Approvals and much more.
+PM_START_TEXT = """ ʜᴇʟʟᴏ *{}*, ᴍʏ ɴᴀᴍᴇ ɪꜱ *{}*! 
+ᴀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ.
+ɪ ʜᴀᴠᴇ ʟᴏᴛꜱ ᴏꜰ ʜᴀɴᴅʏ ꜰᴇᴀᴛᴜʀᴇꜱ ꜱᴜᴄʜ ᴀꜱ:
+‣ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ {ɴᴏ ʟᴀɢ}
+‣ ᴡᴀʀɴɪɴɢ ꜱʏꜱᴛᴇᴍ
+‣ ᴀʀᴛɪꜰɪᴄɪᴀʟ ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+‣ ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ ꜱʏꜱᴛᴇᴍ
+‣ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ
+‣ ꜰɪʟᴛᴇʀꜱ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ
+‣ ᴀᴘᴘʀᴏᴠᴀʟꜱ ᴀɴᴅ ᴍᴜᴄʜ ᴍᴏʀᴇ.
 
-So what are you waiting for?
-*Add me in your groups and give me full rights to make me function well.*
+ꜱᴏ ᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ ᴡᴀɪᴛɪɴɢ ꜰᴏʀ?
+*ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɢɪᴠᴇ ᴍᴇ ꜰᴜʟʟ ʀɪɢʜᴛꜱ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ꜰᴜɴᴄᴛɪᴏɴ ᴡᴇʟʟ.*
 """
 
 
@@ -164,22 +165,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
+        InlineKeyboardButton(text="ᴀᴅᴍɪɴ", callback_data="admin_back"),
         InlineKeyboardButton(
             text="Users", callback_data="user_back"
         ),
     ],
     [
-        InlineKeyboardButton(text="Tools", callback_data="tools_back"),
+        InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Bot Info", callback_data="yone_"
+            text="ʙᴏᴛ ɪɴꜰᴏ", callback_data="yone_"
         ),
     ],
     [
-        InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
