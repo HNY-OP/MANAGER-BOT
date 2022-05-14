@@ -241,8 +241,8 @@ def yone_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                    [
-                     InlineKeyboardButton(text="Support", url="t.me/Yone_Support"),
-                     InlineKeyboardButton(text="News", url="t.me/Yone_Updates"),
+                     InlineKeyboardButton(text="Developer", url="t.me/hnyop"),
+                     InlineKeyboardButton(text="News", url="t.me/hnyrobo"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="yone_back")
